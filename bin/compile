@@ -2,6 +2,7 @@
 
 # if any of the commands fail, die with a non-clean exit code
 set -e
+set -x
 
 # use better globbing rules
 shopt -s dotglob nullglob extglob
@@ -106,5 +107,5 @@ python get-pip.py --user
 echo "-----> Installing python libs: bcrypt, google-auth"
 "${HOME}/.local/bin/pip" install bcrypt google-auth --user
 
-mv "${HOME}/.local" "$APP_DIR/"
+mv "${HOME}/.local" "$BUILD_DIR/"
 
