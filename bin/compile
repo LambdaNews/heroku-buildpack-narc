@@ -106,3 +106,5 @@ python get-pip.py --user
 echo "-----> Installing python libs: bcrypt, google-auth"
 "${HOME}/.local/bin/pip" install bcrypt google-auth --user
 
+mv "${HOME}/.local" "$APP_DIR/"
+
