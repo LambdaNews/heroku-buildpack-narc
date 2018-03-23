@@ -105,7 +105,7 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py --user
 
 echo "-----> Installing python libs: bcrypt, google-auth"
-"${HOME}/.local/bin/pip" install bcrypt google-auth --user
+"${HOME}/.local/bin/pip" install bcrypt google-auth requests --user
 
 mv "${HOME}/.local" "$BUILD_DIR/"
 
